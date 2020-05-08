@@ -1,0 +1,292 @@
+html , body {
+	height: 100%;
+}
+
+#main-content {
+	min-height: 100%;
+}
+
+/*Header*/
+#title {
+	padding: 15px 0px 15px 10px;
+	background-color: #000;
+}
+
+.navbar-header {
+	color: #000;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#logo-img {
+
+	background: url('../images/logo.jpg') no-repeat;
+	height: 140px;
+	width: 140px;
+	margin: -20px 15px 10px 0px;
+
+}
+
+.navbar-brand {
+	padding: 0;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+.navbar-brand h1 {
+	margin: 0;
+}
+
+.navbar-brand h1 span {
+	font-size: 0.5em
+}
+
+.navbar-brand a {
+	text-decoration: none;
+	color: green;
+	font-family: verdana;
+}
+
+.navbar-brand a:hover {
+	color : #124354; 
+}
+
+.side_menu {
+	margin-right: 100px; 
+
+}
+
+.side_menu a,  #collapsed-menu a {
+	text-decoration: none;
+	color: #bbb;
+}
+
+
+ header .side_menu li .active ,  #collapsed-menu a:active ,  #collapsed-menu a:hover {
+ 	background-color: black;
+	color: #fff;
+ }
+
+ #collapsed-menu {
+ 	display: none;
+ 	clear: both;
+ 	margin-left: 60px;
+ }
+
+ #collapsed-menu a {
+ 	margin-right: 10px;
+ }
+
+/*Main content*/
+
+#jumbotron {
+	margin-top: 30px;
+	width: 100%;
+	height: 400px; 
+}
+
+#login {
+	margin: auto;
+	width: 40%;
+	/*height: 350px;*/
+	border-left:20px green solid;
+	font-size: 2em;
+	background-color: black;
+	margin-bottom: 80px;
+	font-family: serif;
+	padding-top: 50px;
+}
+
+#login label {
+	font-size: 0.6em;
+	color: white;
+}
+
+#main-content input {
+	margin: auto;
+	color: #ccc;
+	width: 70%;
+	/*height: 15%;*/
+	outline: none;
+	margin-bottom: 30px;
+}
+
+
+ .submit-btn {
+	font-size: 0.5sem;
+}
+
+ .submit-btn button {
+	background-color: white;
+	color: green;
+}
+
+.submit-btn button:hover {
+	background-color: green;
+	color: white;	
+}
+
+#login #signup {
+	font-size: 0.5em;
+	color: white;
+	padding-bottom: 20px; 
+}
+
+#login #signup a {
+	text-decoration: none;
+	color: green;
+}
+
+#login #signup a:hover {
+	color: white;
+}
+
+#main-content form #checkbox {
+	margin: 0;
+	height: 15px;
+	width: 15px;
+	margin-bottom: 0px;	
+}
+
+
+
+/*Footer*/
+
+
+.panel-footer {
+	background-color: black;
+	color: #cccccc;
+}
+
+#footer .row {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#footer section {
+	text-align: center;
+}
+
+#footer #about span:nth-child(1), #footer #contact span:nth-child(1) {
+	color: green;
+	font-size: 1.5em;
+} 
+
+.info {
+	font-size: 0.9em;
+}
+
+.info a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.info a:hover {
+	color: #124354;
+}
+
+#testimonial {
+	margin-top: 24.8px;
+	font-style: italic;
+}
+
+
+/*Sign Up page*/
+
+#signup-box {
+	width: 50%;
+	text-align: center;
+	border-left:20px green solid;
+	font-size: 2em;
+	background-color: black;
+	font-family: serif;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	margin: auto;
+	margin-top: 91.4px;
+}
+
+
+#signup-box h2 {
+	color: green;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+}
+
+#signup-box input {
+	height: 35px;
+	margin-bottom: 20px;
+}
+
+#signup-box button {
+	width: 30%;
+}
+
+#main-content input {
+	color: black;
+}
+
+
+/*Media queries*/
+
+@media (max-width:768px) {
+
+	.side_menu {
+		display: none;
+	}
+
+	#logo {
+		display: none;
+	}
+
+	.navbar-brand {
+		margin: auto;
+		margin-left: 10%;
+	}
+
+	.navbar-brand h1 {
+		font-size: 1.8em;
+	}
+
+
+	#jumbotron {
+		/*max-height: 10%;*/
+		height: 310px;
+		width: 80%;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 20%;
+	}
+
+	#login {
+		width: 80%;
+		height: 310px;
+		border-left: 10px green solid;
+	}
+
+	#signup-box {
+		width: 300px;
+		height: 360px;
+	}
+
+	#collapsed-menu	{
+		display: block;
+		/*margin-left: 10%;*/
+		margin-right: 10%;
+	}
+
+	footer {
+		margin-top: -20px;
+		font-size: 0.75em;
+	}
+
+	footer hr {
+		margin: 5px;
+	}
+
+	footer #testimonial {
+		margin-top: 10px;
+	}
+
+}
